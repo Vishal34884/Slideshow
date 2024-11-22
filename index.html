@@ -46,6 +46,19 @@
     .carousel-indicators .active {
       background-color: rgba(0, 0, 0, 0.9);
     }
+
+    /* Caption styling */
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .carousel-caption h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -55,16 +68,39 @@
       <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://cdn.audleytravel.com/2100/1500/79/540267-pool-loews-hotel-santa-monica-los-angeles.jpg" class="d-block w-100" alt="Hotel Pool">
+        <div class="carousel-caption">
+          <h1>Swimming Pool</h1>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="https://connect.sandiego.org/wp-content/uploads/2016/01/USGrant-lux1488ex-84886-Exterior.jpg" class="d-block w-100" alt="Hotel Exterior">
+        <div class="carousel-caption">
+          <h1>Balcony View</h1>
+        </div>
       </div>
       <div class="carousel-item">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Imperial_Hotel_Osaka_regular_floor_standard_twin_room_20120630-001.jpg" class="d-block w-100" alt="Hotel Room">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Imperial_Hotel_Osaka_regular_floor_standard_twin_room_20120630-001.jpg" class="d-block w-100" alt="Deluxe Room">
+        <div class="carousel-caption">
+          <h1>Deluxe Room</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="http://hotelmalaysia.com.my/images/Standard%20Room/IMGL6453xxx.jpg" class="d-block w-100" alt="Standard Room">
+        <div class="carousel-caption">
+          <h1>Standard Room</h1>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://expressinnindia.com/wp-content/uploads/2022/08/PRESIDENTIAL-SUITE-1-scaled.jpg" class="d-block w-100" alt="Suite Room">
+        <div class="carousel-caption">
+          <h1>Suite Room</h1>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
