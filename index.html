@@ -7,18 +7,18 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
   <style>
-    /* Carousel container */
+    /* Carousel container for full-width */
     #hotelCarousel {
-      max-width: 800px;
-      margin: 20px auto;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      overflow: hidden;
+      width: 100%;
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
     }
 
-    /* Carousel images */
+    /* Carousel images for full-width */
     .carousel-inner img {
-      height: 450px;
+      height: 500px; /* Adjust height as needed */
+      width: 100%;
       object-fit: cover;
     }
 
@@ -50,7 +50,7 @@
 </head>
 <body>
   <!-- Slideshow -->
-  <div id="hotelCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div id="hotelCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
